@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thekrakensolutions.gestioncobranza">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <activity android:name="com.thekrakensolutions.gestioncobranza.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.WelcomeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.Home"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.Menu"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.Login"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.Registro"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.Lista_clientes"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.Detalle_cliente"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.Agregar_pago"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.Confirmar_pago"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.Detalle_pago"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.Lista_contratos"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thekrakensolutions.gestioncobranza.Detalle_contrato"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.LoadDevDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.discovery.DiscoveryDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovery Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.discovery.BluetoothDiscovery"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.discovery.MulticastDiscoveryResultList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.discovery.DirectedBroadcastResultList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.discovery.DirectedBroadcastParameters"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Directed Broadcast Parameters"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.discovery.SubnetSearchResultList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.discovery.SubnetSearchParameters"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Subnet Search Parameters"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.discovery.LocalBroadcastDiscoveryResultList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.discovery.FindPrintersDiscoveryResultList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.discovery.MulticastDiscoveryParameters"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Multicast Parameters"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.imageprint.ImagePrintDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Image Print Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.magcard.MagCardDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Mag Card Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.status.PrintStatusDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Printer Status Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.smartcard.SmartCardDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Smart Card Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.sigcapture.SigCaptureDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Signature Capture Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.sendfile.SendFileDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Send File Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.sendfile.SendFileRecibo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Send File Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.sendfile.SendFileReciboURL"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Send File Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.storedformat.StoredFormatScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Stored Format Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.storedformat.StoredFormatDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.storedformat.VariablesScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.connectivity.ConnectivityDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Connectivity Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.status.PrinterStatusScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Status Messages"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.listformats.ListFormatsScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="List Formats Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.listformats.ListFormatsDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.statuschannel.StatusChannelDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Status Channel"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.statuschannel.StatusChannelScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Status Channel View"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.multichannel.MultiChannelDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Multichannel"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.multichannel.MultiChannelScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Multichannel View"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.connectionbuilder.ConnectionBuilderDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Connection Builder Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.receipt.ReceiptDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Receipt Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.thekrakensolutions.gestioncobranza.sdk.comm.BluetoothConnection"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Bluetooth Connection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+
+</manifest>

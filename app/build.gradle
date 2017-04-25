@@ -1,0 +1,125 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.thekrakensolutions.gestioncobranza"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.amitshekhar.android:android-networking:0.3.0'
+    compile 'com.google.code.gson:gson:2.7'
+    testCompile 'junit:junit:4.12'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.android.gms:play-services-maps:9.8.0'
+    compile 'com.afollestad.material-dialogs:core:0.9.1.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile 'com.prolificinteractive:material-calendarview:1.4.2'
+    //compile 'com.zebra-zpl:0.0.1'
+
+    //ZPrinter = require('com.zebra.sdk.printer.*'),
+
+    //ZDevice = require('com.zebra.sdk.device.*
+
+
+    //compile files('./src/main/resources/enterprise.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-io-2.2.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-lang3-3.4.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-net-3.1.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-validator-1.4.0.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/core-1.53.0.0.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/httpcore-4.3.1.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/httpmime-4.3.2.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-annotations-2.2.3.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-core-2.2.3.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-databind-2.2.3.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/opencsv-2.2.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/pkix-1.53.0.0.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/prov-1.53.0.0.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/snmp6_1.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/ZSDK_ANDROID_API.jar')
+
+
+
+
+
+    /*
+compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-io-2.2.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/ZSDK_ANDROID_API.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-lang3-3.4.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-net-3.1.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-validator-1.4.0.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/core-1.53.0.0.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/httpcore-4.3.1.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/httpmime-4.3.2.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-annotations-2.2.3.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-core-2.2.3.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-databind-2.2.3.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/opencsv-2.2.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/pkix-1.53.0.0.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/prov-1.53.0.0.jar')
+    compile files('src/main/java/com/thekrakensolutions/gestioncobranza/libs/snmp6_1.jar')
+
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile files('libs/commons-io-2.2.jar')
+    compile files('libs/commons-lang3-3.4.jar')
+    compile files('libs/commons-net-3.1.jar')
+    compile files('libs/commons-validator-1.4.0.jar')
+    compile files('libs/core-1.53.0.0.jar')
+    compile files('libs/httpcore-4.3.1.jar')
+    compile files('libs/httpmime-4.3.2.jar')
+    compile files('libs/jackson-annotations-2.2.3.jar')
+    compile files('libs/jackson-core-2.2.3.jar')
+    compile files('libs/jackson-databind-2.2.3.jar')
+    compile files('libs/opencsv-2.2.jar')
+    compile files('libs/pkix-1.53.0.0.jar')
+    compile files('libs/prov-1.53.0.0.jar')
+    compile files('libs/snmp6_1.jar')
+    compile files('libs/ZSDK_ANDROID_API.jar')
+    */
+    /*
+
+                testCompile 'junit:junit:4.12'
+                compile 'com.android.support:design:23.1.1'
+                compile('org.apache.httpcomponents:httpmime:4.3.6') {
+                    exclude module: 'httpclient'
+                }
+                compile 'com.google.zxing:core:3.2.1'
+                androidTestCompile 'junit:junit:4.12'
+                */
+
+    // https://mvnrepository.com/artifact/fr.w3blog/zebra-zpl
+
+    //compile group: 'fr.w3blog', name: 'zebra-zpl', version: '0.0.1'
+
+    //provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/hectoraguilar/Library/Android/sdk/add-ons/addon-symbol-emdk_v4.0_API-19/libs')
+
+    //compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
+
+}

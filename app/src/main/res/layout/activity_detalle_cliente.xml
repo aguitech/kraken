@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@color/blanco"
+    tools:context="com.thekrakensolutions.gestioncobranza.Detalle_cliente">
+    <LinearLayout
+        android:background="@color/blanco"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:id="@+id/header"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:onClick="goMenu"
+            android:layout_weight="0.20"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="0.60"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/kraken_logo_mini"
+                android:layout_width="100dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="0.20"
+            android:onClick="goNotificaciones"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/campanita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnNotificaciones" />
+            <!--
+            <TextView
+                android:gravity="center"
+                android:id="@+id/numeroNotificaciones"
+                android:text=""
+                android:visibility="gone"
+                android:background="@drawable/fondo_notificacion"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/texto_notificaciones"
+                android:layout_marginLeft="@dimen/notificaciones_margin_left"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/notificaciones_margin_top"
+                android:layout_height="wrap_content" />
+            -->
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:background="@color/azul_kraken"
+        android:id="@+id/header_verde"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.10"
+            android:gravity="center"
+            android:layout_height="match_parent"></LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.80"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <!--
+            <ImageView
+                android:src="@drawable/anuncios"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+            -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Detalle de cliente"
+                android:gravity="center"
+                android:textColor="@color/blanco"
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.10"
+            android:gravity="center"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header_verde">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:clipToPadding="false"
+            android:paddingTop="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Información del Cliente" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/fondo_input">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cliente_perfil"
+                    android:id="@+id/imgVeterinario" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:id="@+id/txtNombreA"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre de cliente"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/emailico"/>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/txtEmailA"
+                            android:textSize="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="usuario@email.com"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/celico"/>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/txtCelA"
+                            android:textSize="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00 00 00 00 00"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/cedulaico"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="15dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txtDireccion"
+                    android:textSize="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00 00 00 00 00"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="15dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:paddingTop="0dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Regresar"
+                    android:textColor="@color/gris_fuerte"
+                    android:textAllCaps="false"
+                    android:onClick="goBack"
+                    android:textSize="12dp"
+                    android:background="@drawable/border_verde_radius"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="15dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:paddingTop="0dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Agregar pago"
+                    android:textColor="@color/gris_fuerte"
+                    android:textAllCaps="false"
+                    android:onClick="goAgregarPago"
+                    android:textSize="12dp"
+                    android:background="@drawable/border_verde_radius"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/fondo_input"
+        android:paddingTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/footer"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_weight=".25"
+                android:layout_height="40dp"
+                android:onClick="goClientes"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/clientes"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_weight=".25"
+                android:layout_height="40dp"
+                android:onClick="goMascotas"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mascotass"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_weight=".25"
+                android:layout_height="40dp"
+                android:onClick="goServicio"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/servicios_dos"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_weight=".25"
+                android:onClick="goTienda"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/tienda"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

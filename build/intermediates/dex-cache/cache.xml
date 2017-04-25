@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/snmp6_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0bca89e1d2d15cd384cc8aa6cef9940fb9ad6469">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/snmp6_1_05200cbc107e5aaf498c4810bd4e0da5fe2b7541.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-databind-2.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03ae380888029daefb91d3ecdca3a37d8cb92bc9">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/jackson-databind-2.2.3_bf63b19c3d92c31040b376a3edee62804cad4b34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/snmp6_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0bca89e1d2d15cd384cc8aa6cef9940fb9ad6469">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/snmp6_1_05200cbc107e5aaf498c4810bd4e0da5fe2b7541/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-databind-2.2.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03ae380888029daefb91d3ecdca3a37d8cb92bc9">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/jackson-databind-2.2.3_bf63b19c3d92c31040b376a3edee62804cad4b34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-validator-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="42fa1046955ade59f5354a1876cfc523cea33815">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/commons-validator-1.4.0_a24896fdd3dfe73e62dfeea34ed836b82e824388.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-net-3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2298164a7c2484406f2aa5ac85b205d39019896f">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/commons-net-3.1_723caf64ceadb7a10103cdc6f00ce2c5402d5bbf.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-validator-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="42fa1046955ade59f5354a1876cfc523cea33815">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/commons-validator-1.4.0_a24896fdd3dfe73e62dfeea34ed836b82e824388/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-net-3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2298164a7c2484406f2aa5ac85b205d39019896f">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/commons-net-3.1_723caf64ceadb7a10103cdc6f00ce2c5402d5bbf/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/prov-1.53.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="72c4892e05c7563fbab0c4ada0187cd879113389">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/prov-1.53.0.0_5cf7cd1093504f73d9553d78a65aea8e6fea5827.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-annotations-2.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0527fece4f23a457070a36c371a26d6c0208e1c3">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/jackson-annotations-2.2.3_383e203c2616491ba4ddbc83ec232d356d2c4c1b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/prov-1.53.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="72c4892e05c7563fbab0c4ada0187cd879113389">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/prov-1.53.0.0_5cf7cd1093504f73d9553d78a65aea8e6fea5827/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-core-2.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/jackson-core-2.2.3_c9088d775bf04807a55bbec92f0ccf3c0367aa16/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-annotations-2.2.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0527fece4f23a457070a36c371a26d6c0208e1c3">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.2.3_383e203c2616491ba4ddbc83ec232d356d2c4c1b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4d00bb086d72c8ab0f435e2e9f0af504547cf216/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-io-2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="83b5b8a7ba1c08f9e8c8ff2373724e33d3c1e22a">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/commons-io-2.2_d9460a66b2e06879b8f632ff3c20315f8f0e655b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/ZSDK_ANDROID_API.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e02314a39e0bb526c7acd70f07255fa9e2e666fe">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/ZSDK_ANDROID_API_dc2fe049ae712c57d16ee72e8c46951a229f91e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-io-2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="83b5b8a7ba1c08f9e8c8ff2373724e33d3c1e22a">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/commons-io-2.2_d9460a66b2e06879b8f632ff3c20315f8f0e655b/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/ZSDK_ANDROID_API.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e02314a39e0bb526c7acd70f07255fa9e2e666fe">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/ZSDK_ANDROID_API_dc2fe049ae712c57d16ee72e8c46951a229f91e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/pkix-1.53.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="340c75534d964f468d82ed42006a7255362046c7">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/pkix-1.53.0.0_a46e22dc1b61eeefacdaba6f5241a03ba788501b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-lang3-3.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5fe28b9518e58819180a43a850fbc0dd24b7c050">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/commons-lang3-3.4_4c3aaf79ac205f76312597857ec4d33d6d04d176/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/pkix-1.53.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="340c75534d964f468d82ed42006a7255362046c7">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/pkix-1.53.0.0_a46e22dc1b61eeefacdaba6f5241a03ba788501b/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/commons-lang3-3.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5fe28b9518e58819180a43a850fbc0dd24b7c050">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/commons-lang3-3.4_4c3aaf79ac205f76312597857ec4d33d6d04d176.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/opencsv-2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f1231104847b1132a07c54c7db8a823ef7923f7c">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/opencsv-2.2_0c666eca3ce4440a9b5914d3c4d2db95c941ba9c/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/jackson-core-2.2.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.3_c9088d775bf04807a55bbec92f0ccf3c0367aa16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/opencsv-2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f1231104847b1132a07c54c7db8a823ef7923f7c">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/opencsv-2.2_0c666eca3ce4440a9b5914d3c4d2db95c941ba9c.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7cd1224d5fdc73ebf1bf8bfa19cc4096d49dbd3">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f36b5b6616c713e71eeada71b778900cd9824047/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/core-1.53.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="619f704791db186304325bd129b2e7ec34f77438">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/core-1.53.0.0_0388776312e331a4056100df0f5d2df150148178/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/core-1.53.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="619f704791db186304325bd129b2e7ec34f77438">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/core-1.53.0.0_0388776312e331a4056100df0f5d2df150148178.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/httpmime-4.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3202421d9425ced69919b282afa644e7ef0e8fef">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/httpmime-4.3.2_f15ba3cca91f5a2be0bc750de711bf17c10b4332.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/httpcore-4.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98e2eefcf524f757188f172642ecf5e2c7421947">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/pre-dexed/debug/httpcore-4.3.1_0bc142bbe73cb96d0e7cc7c45959da799a334749.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/httpmime-4.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3202421d9425ced69919b282afa644e7ef0e8fef">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/httpmime-4.3.2_f15ba3cca91f5a2be0bc750de711bf17c10b4332/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/src/main/java/com/thekrakensolutions/gestioncobranza/libs/httpcore-4.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98e2eefcf524f757188f172642ecf5e2c7421947">
+        <dex dex="/Users/hectoraguilar/Git/TKS_android_2017.Abr.06_CompletaZebra/app/build/intermediates/transforms/dex/debug/folders/1000/2/httpcore-4.3.1_0bc142bbe73cb96d0e7cc7c45959da799a334749/classes.dex" />
+    </item>
+
+</items>

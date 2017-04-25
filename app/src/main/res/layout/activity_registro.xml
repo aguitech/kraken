@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thekrakensolutions.gestioncobranza.Registro">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/logo_zungu"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.80"
+                android:src="@drawable/logo_zungu"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/logo_zungu"
+            android:id="@+id/tx_registro"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.80"
+                android:text="REGÍSTRATE"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/verde_claro"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/tx_registro"
+            android:id="@+id/input"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:hint="Nombre"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:id="@+id/txtNombre"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:background="@color/fondo_input"
+                android:inputType="text"
+                android:drawableLeft="@drawable/nombre"
+                android:drawablePadding="@dimen/txtDrwblPadding"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:hint="Apellido"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:id="@+id/txtApellido"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:background="@color/fondo_input"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/input"
+            android:id="@+id/tx_registro_dos"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:hint="Correo electrónico"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:id="@+id/txtEmail"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/fondo_input"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="@dimen/txtDrwblPadding"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/tx_registro_dos"
+            android:id="@+id/tx_registro_tres"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:hint="Contraseña"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:id="@+id/txtPassword"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/fondo_input"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="@dimen/txtDrwblPadding"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/tx_registro_tres"
+            android:id="@+id/tx_registro_cuatro"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:hint="Confirmar contraseña"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/txtPasswordDos"
+                android:background="@color/fondo_input"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="@dimen/txtDrwblPadding"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/tx_registro_cuatro"
+            android:id="@+id/btn_registro"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:text="Regístrate"
+                android:onClick="doRegistro"
+                android:textColor="@color/texto_slider"
+                android:textSize="15dp"
+                android:background="@drawable/registro_btn"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/btn_registro"
+            android:id="@+id/separador"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/fondo_input"
+                android:layout_weight="0.43">
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:textColor="@color/verde_texto"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="ó"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/fondo_input"
+                android:layout_weight="0.43">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/separador"
+            android:id="@+id/btn_face"
+            android:weightSum="1"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:text="Registrarme con Facebook"
+                android:textColor="@color/texto_slider"
+                android:textSize="13dp"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_facebook"
+                android:layout_height="match_parent"
+                android:layout_weight="0.65"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/btn_face"
+            android:id="@+id/txt_cuenta"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:gravity=""
+                android:textColor="@color/cuenta"
+                android:textSize="14dp"
+                android:text="¿Ya tienes cuenta?"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:text="Iniciar sesión"
+                android:onClick="goLogin"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="13dp"
+                android:background="?android:attr/selectableItemBackground"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/olvida_contrasena"
+            android:layout_below="@id/txt_cuenta"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:text="¿Olvidaste tu contraseña?"
+                android:layout_height="match_parent"
+                android:textColor="@color/gris_fuerte"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:background="?android:attr/selectableItemBackground"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/olvida_contrasena"
+            android:id="@+id/txt_leyenda"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.90"
+                android:gravity="center"
+                android:textColor="@color/cuenta"
+                android:textSize="16dp"
+                android:text="@string/login_leyenda"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/txt_leyenda"
+            android:id="@+id/imagen_final"
+            android:weightSum="1"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.90"
+                android:src="@drawable/registro_mascotas"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

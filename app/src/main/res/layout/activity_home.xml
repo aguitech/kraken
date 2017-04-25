@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondozungu"
+    tools:context="com.thekrakensolutions.gestioncobranza.Home">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:background="@color/blanco"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_height="60dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="0.20"
+                        android:onClick="goMenu"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="0.60"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/kraken_logo_mini"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="0.20"
+                        android:onClick="goNotificaciones"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/campanita"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnNotificaciones" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+                <LinearLayout
+                    android:id="@+id/layoutDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dots_height"
+                    android:layout_marginTop="-40dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"></LinearLayout>
+
+
+
+                <!--
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/imagen_header"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/gat_"
+                        android:adjustViewBounds="true"/>
+                    <LinearLayout
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:onClick="goMenu"
+                                android:layout_weight="0.20"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:src="@drawable/menu_blanco"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:layout_weight="0.60"
+                                android:layout_height="54dp">
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:layout_weight="0.20"
+                                android:onClick="goNotificaciones"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:src="@drawable/campanita_blanca"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/btnNotificaciones" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.90"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:src="@drawable/logo_veterinarios"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.90"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/textHome"
+                                    android:gravity="center"
+                                    android:textColor="@color/blanco"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:layout_width="match_parent"
+                                    android:text="Regístrate y forma parte de la mejor red de veterinarios de tu zona"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+                -->
+
+                <LinearLayout
+                    android:layout_below="@+id/separador"
+                    android:id="@+id/header_dos"
+                    android:gravity="center"
+                    android:weightSum="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/home2"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textColor="@color/blanco"
+                            android:gravity="center"
+                            android:text="PROMOCIONA TU ESTABLECIMIENTO ,
+CONSIGUE MÁS CLIENTES"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:layout_width="200dp"
+                            android:gravity="center"
+                            android:text="Promocionar ahora"
+                            android:layout_marginTop="20dp"
+                            android:onClick="goPerfil"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/btn_verde_radius"
+                            android:drawableLeft="@drawable/inidicador"
+                            android:paddingLeft="10dp"
+                            android:textAllCaps="false"
+                            android:layout_height="40dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="VENDE EN LÍNEA"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:layout_weight="0.40"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.60"
+                        android:background="@color/gris_claro"
+                        android:layout_height="2dp">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.90"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textColor="@color/gris_fuerte"
+                            android:textSize="12dp"
+                            android:text="Comienza a vender tus productos en línea, promociona tus servicios. "
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.90"
+                        android:background="@drawable/border_gris"
+                        android:layout_height="wrap_content">
+                            <!--Bloque uno-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:gravity="center"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/producto"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:orientation="vertical"
+                                    android:gravity="center_vertical"
+                                    android:layout_height="match_parent">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:text="Nombre del producto"
+                                            android:textStyle="bold"
+                                            android:textSize="12dp"
+                                            android:textColor="@color/gris_fuerte"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:text="Disponibles: 25"
+                                            android:textSize="12dp"
+                                            android:textColor="@color/gris_fuerte"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:text="Precio: $300.00"
+                                            android:textSize="12dp"
+                                            android:textColor="@color/gris_fuerte"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:text="Descripción: Xxxxxxxxxxxxxx"
+                                            android:textSize="12dp"
+                                            android:textColor="@color/gris_fuerte"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+                            </LinearLayout>
+                            <!--Termina Bloque uno-->
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.50"
+                        android:background="@color/gris_claro"
+                        android:layout_height="2dp">
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="ORGANIZA TUS CITAS"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:layout_weight="0.50"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.90"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textColor="@color/gris_fuerte"
+                            android:textSize="12dp"
+                            android:text="Agenda y organiza fácilmente tus citas."
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/numeros"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Comenzar >"
+                        android:gravity="right"
+                        android:onClick="goCitas"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/azul_kraken"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.50"
+                        android:layout_height="wrap_content"
+                        android:onClick="goPoliticas">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Políticas de privacidad "
+                            android:gravity="left"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/gris_claro"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.50"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Términos y condiciones"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/gris_claro"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
